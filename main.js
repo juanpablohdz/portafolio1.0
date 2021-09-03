@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     enlaces.forEach((elemento) => {
 
         elemento.addEventListener('click', (evento) => {
-            /*comprtamiento determinado de la pagina */
+            /*comportamiento determinado de la pagina */
             evento.preventDefault();
             enlaces.forEach((enlace) => enlace.classList.remove('activo'));
             evento.target.classList.add('activo');
@@ -67,3 +67,9 @@ window.addEventListener('load', () => {
 
 
 });
+//BOTON DE NOCHE
+const switchButton = document.getElementById('switch');
+switchButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    switchButton.classList.toggle('active')
+})

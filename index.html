@@ -34,12 +34,15 @@
             <div class="categorias" id="categorias">
                 <a href="#" class="activo">Inicio</a>
                 <!--<a href="#">Sobre mi</a>-->
+
                 <a href="#">Conocimientos</a>
                 <a href="#">Portafolio</a>
                 <a href="#">Contacto</a>
-
-
-
+                <!-- boton de dia/noche -->
+                <button class="switchDark active" id="switch">
+                        <span><i class='fas fa-sun' ></i></span>
+                        <span><i class='fas fa-moon' ></i></span>
+                
             </div>
         </header>
 
@@ -50,8 +53,8 @@
             <div class="item2" data-categoria="inicio" data-etiquetas="inicio">
                 <div class="item-contenido2">
 
-                    <p>Bienvenido a mi Web donde muestro mis proyectos y mis conocimientos para el óptimo desarrollo, análisis, visualización y programación de los datos. </p>
-
+                    <p>Bienvenido a mi Web donde muestro mis proyectos y conocimientos para el óptimo desarrollo, análisis, visualización y programación de los datos. </p>
+                    <p>(Puedes darle cilck a las imagenes.)</p>
                 </div>
 
             </div>
@@ -69,8 +72,7 @@
             <div class="item" data-categoria="conocimientos" data-etiquetas="conocimiento" data-descripcion="Conocimiento de las bases de datos en SQL Server para hacer consultas y para agregar o eliminar registros.
                 <li>Consultas
                     <li>Limpieza de datos
-                        <li>XML
-                            <li>MySQL">
+                        <li>XML">
                 <div class="item-contenido">
                     <img src="img/SQL.jpg" alt="">
                 </div>
@@ -91,7 +93,7 @@
                 <div class="item-contenido">
                     <img src="img/Rstudio.jpg" alt="">
                 </div>
-                <!--  aqui me quede  -->
+                <!--  cada separacion de un contenedor esta diferente de un div  -->
             </div>
             <div class="item" data-categoria="conocimientos" data-etiquetas="conocimientos" data-descripcion="Conocimiento sobre trabajar con las bases de datos para su respectiva búsqueda o procesos.
              <li>Cubos OLAP">
@@ -110,8 +112,7 @@
             </div>
             <div class="item" data-categoria="conocimientos" data-etiquetas="conocimientos" data-descripcion="Desarrollo de páginas web y lógica en diferentes tecnologías para su desarrollo.
             <li>CCS
-                <li>Bootstrap
-                    <li>GitHub">
+                <li>Bootstrap">
                 <div class="item-contenido">
                     <img src="img/html51.jpg" alt="">
                 </div>
@@ -127,6 +128,28 @@
                 </div>
 
             </div>
+
+            <div class="item" data-categoria="conocimientos" data-etiquetas="conocimientos" data-descripcion="Manejo de repositorios con la herramienta GitHub
+            <li>Pull request
+                <li>Merge
+                    <li>Manejo de brachs
+                        <li>Git bash
+                            <li>consola">
+                <div class=" item-contenido ">
+                    <img src="img/GitHub-Logo2.png " alt=" ">
+                </div>
+
+            </div>
+
+            <div class="item" data-categoria="conocimientos" data-etiquetas="conocimientos" data-descripcion="Generación de reportes y visualización de los datos.
+            <li>reportes">
+                <div class=" item-contenido ">
+                    <img src="img/googlestudio.png " alt=" ">
+                </div>
+
+            </div>
+
+
             <!--portafolio-->
             <!--primer proyecto-->
             <div class="item3" data-categoria="portafolio" data-etiquetas="portafolio">
@@ -148,7 +171,7 @@
 
                     <p>
                         <a href="https://colab.research.google.com/drive/1pm-0LQxJRLe4g_Dmd_zAsCya_9Hxs0Bl" button class="btn btn-dark" target="blank">
-                            <h3>Proyecto</h3>
+                            <font COLOR="#2C487E">->PROYECTO<-</font>
                         </a>
                     </p>
                 </div>
@@ -165,21 +188,23 @@
 
                     <p>
                         <a href="https://github.com/juanpablohdz/EJERCICIOS-R" button class="btn btn-dark" target="blank">
-                            <h3>Proyecto</h3>
+                            <font COLOR="#2C487E">->PROYECTO<-</font>
                         </a>
                     </p>
                 </div>
 
             </div>
-         <div class="item3" data-categoria="portafolio" data-etiquetas="portafolio" data-descripcion="">
+            <div class="item3" data-categoria="portafolio" data-etiquetas="portafolio" data-descripcion="">
                 <div class="item-contenido3">
+                    
                     <P>
                         <h3>3.-Casos de covid-19 por alcaldía de la Ciudad de México </P>
                     </h3>
-                    <P>El proyecto se realizo en Google Data Studio para para poder hacer diferentes tipos de visualización interactiva y visualizar los casos activos por covid-19 en alcaldías CDMX </P>
+                    <P>El proyecto se realizo en Google Data Studio con diferentes tipos de visualización interactiva y visualizar los casos activos por covid-19 en alcaldías CDMX </P>
                     <p>
+                   
                         <a href="https://datastudio.google.com/reporting/f66a7d9b-5a39-4b44-84c5-cf66ca8894bc/page/ht5uB" button class="btn btn-dark" target="blank">
-                            <h3>Proyecto</h3>
+                            <font COLOR="#2C487E">->PROYECTO<-</font>
                         </a>
                     </p>
                 </div>
@@ -215,6 +240,9 @@
 
 -->
 
+
+                <!--     en fotnawesom " se consiguen los iconos en internet "         -->
+
         </section>
 
         <section class="overlay  " id="overlay">
@@ -225,46 +253,52 @@
 
             </div>
             <p class="descripcion"></p>
-        </section>
+            </section>
 
-        <footer class="contenedor">
+            <footer class="contenedor">
 
-            <div class="redes-sociales">
-                <div class="contenedor-icono">
-                    <a href="https://www.linkedin.com/in/juan-pablo-hernandez-garcia/" target="_blank" class="linkedin">
+                <div class="redes-sociales">
+                    <div class="contenedor-icono">
+                        <a href="https://www.linkedin.com/in/juan-pablo-hernandez-garcia/" target="_blank" class="linkedin">
 
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="https://api.whatsapp.com/send?phone=+525569727223&text=HOLA!%20te%20contacto%20desde%20tu%20sitio%20web%20este%20es%20mi%20asunto:
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="https://api.whatsapp.com/send?phone=+525569727223&text=HOLA!%20te%20contacto%20desde%20tu%20sitio%20web%20este%20es%20mi%20asunto:
                 " target="_blank" class="whatsapp">
 
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="mailto:juan.hdz9901@gmail.com?body=Hola te contacto desde tu sitio web asunto:" target="_blank " class="email ">
+
+                            <i class="fas fa-envelope-square "></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono ">
+                        <a href="https://github.com/juanpablohdz " target="_blank " class="github ">
+                            <i class="fab fa-github "></i>
+
+                        </a>
+                    </div>
                 </div>
-                <div class="contenedor-icono">
-                    <a href="mailto:juan.hdz9901@gmail.com?body=Hola te contacto desde tu sitio web asunto:" target="_blank " class="email ">
 
-                        <i class="fas fa-envelope-square "></i>
-                    </a>
+
+                <div class="creado-por ">
+                    <p>Sitio diseñado por Juan Pablo Hernandez Garcia</a>
+                    </p>
                 </div>
-            </div>
+            </footer>
 
 
-            <div class="creado-por ">
-                <p>Sitio diseñado por Juan Pablo Hernandez Garcia</a>
-                </p>
-            </div>
-        </footer>
+    </div>
 
 
-        </div>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js "></script>
-        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js "></script>
-        <script src="main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js "></script>
+    <script src="main.js "></script>
 
 </body>
 

@@ -273,6 +273,10 @@ footer .redes-sociales .email {
     background: #B23121;
 }
 
+footer .redes-sociales .github {
+    background: #000000;
+}
+
 footer .redes-sociales a i {
     font-size: 20px;
     line-height: 60px;
@@ -312,4 +316,57 @@ footer .creado-por a {
     .grid .item-contenido2 {
         width: 100%;
     }
+}
+
+
+/*BOTON DE NOCHE*/
+
+.switchDark {
+    background-color: #3494b1;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switchDark span {
+    width: 40px;
+    height: 43px;
+    line-height: 30px;
+    display: block;
+    color: rgb(0, 0, 0);
+    background: none;
+}
+
+.switchDark::after {
+    display: block;
+    background: #000000;
+    width: 2.6rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+
+.switchDark.active {
+    background: #6b5e5e;
+}
+
+.switchDark.active::after {
+    left: unset;
+    right: 0;
+}
+
+body.dark {
+    background: #0e2c40;
+    color: rgb(0, 0, 0);
 }
